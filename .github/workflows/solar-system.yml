@@ -8,6 +8,7 @@ on:
             - 'feature/*'
 jobs:
     unit-testing:
+        name: Unit Testing
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repository
