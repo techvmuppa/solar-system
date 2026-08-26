@@ -8,8 +8,7 @@ on:
             - 'feature/*'
 
 env:
-    MONGO_URI: 'mongodb+srv://${{ MONGO_USERNAME }}:${{ secrets.MONGO_PASSWORD }}@cluster0.egdm53l.mongodb.net/?appName=Cluster0'
-    MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
+    MONGO_URI: 'mongodb+srv://superUser:${{ secrets.MONGO_PASSWORD }}@cluster0.egdm53l.mongodb.net/?appName=Cluster0'
     MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
 
 jobs:
