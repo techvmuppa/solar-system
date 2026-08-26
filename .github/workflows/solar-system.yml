@@ -9,8 +9,8 @@ on:
 
 env:
     MONGO_URI: 'mongodb+srv://superUser.egdm53l.mongodb.net/Cluster0'
-    MONGO_USERNAME: ${{env.MONGO_USERNAME}}
-    MONGO_PASSWORD: ${{secrets.MONGO_PASSWORD}}
+    MONGO_USERNAME: ${{ env.MONGO_USERNAME }}
+    MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
 
 jobs:
     unit-testing:
