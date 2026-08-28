@@ -8,7 +8,7 @@ on:
             - 'feature/*'
 
 env:
-    MONGO_URI: 'mongodb+srv://superUser:superPassword@planets.bwahbhy.mongodb.net/?appName=planets'
+    MONGO_URI: ${{secrets.MONGO_PASSWORD}}
 
 
 jobs:
