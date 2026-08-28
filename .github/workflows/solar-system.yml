@@ -8,9 +8,8 @@ on:
             - 'feature/*'
 
 env:
-    MONGO_URI: 'mongodb+srv://superUser:${{MONGO_PASSWORD}}@planets.bwahbhy.mongodb.net/?appName=planets'
+    MONGO_URI: 'mongodb+srv://superUser:superPassword@planets.bwahbhy.mongodb.net/?appName=planets'
 
-    MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
 
 jobs:
     unit-testing:
